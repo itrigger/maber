@@ -1,3 +1,4 @@
+</div>
 <footer id="footer">
   <?php if ($informations) { ?>
   <div class="column">
@@ -37,9 +38,8 @@
   </div>
 </footer>
 
-</div>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
 <script type="text/javascript" src="catalog/view/theme/default/js/plugins.js"></script>
 <script type="text/javascript" src="catalog/view/theme/default/js/project-name.js"></script>
 
-<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
 </body></html>

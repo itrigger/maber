@@ -23,7 +23,6 @@
 
 <script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
 <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
-
 <!--[if lte IE 8]><script src="catalog/view/javascript/static/layout/js/oldies.js" type="text/javascript"></script> <![endif]-->
 
 </head>
