@@ -12,3 +12,30 @@
 @import "_8_catalog";
 @import "_9_photogallery";
 @import "_10_contacts";
+
+
+#container-outer {
+  float:left;
+  overflow: hidden;
+  background: #eee;
+  width: 100%;
+}
+#container-inner {
+  float:left;
+  background: #555;
+  position: relative;
+  right: 75%;
+    width: 100%;
+}
+#column-left {
+  float: left;
+  width: 25%;
+  position: relative;
+  left: 75%;
+}
+#content-2 {
+  float: left;
+  width: 75%;
+  position: relative;
+  left: 75%;
+}

@@ -1,5 +1,8 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+<div id="container-outer">
+  <div id="container-inner">
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content-2"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -56,7 +59,7 @@
       </div>
       <?php } ?>
       <?php if ($options) { ?>
-      
+
       <?php } ?>
 
       <?php if ($review_status) { ?>
@@ -175,7 +178,10 @@
     <?php } ?>
   </div>
   <?php } ?>
-  <?php echo $content_bottom; ?></div>
+  <?php echo $content_bottom; ?>
+  </div>
+  </div>
+  </div>
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	$('.colorbox').colorbox({

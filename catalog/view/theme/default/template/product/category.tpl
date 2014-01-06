@@ -1,5 +1,10 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<?php echo $header; ?>
+<div id="container-outer">
+  <div id="container-inner">
+<?php echo $column_left; ?>
+
+<!--<?php echo $column_right; ?>-->
+<div id="content-2"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -102,7 +107,13 @@
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
   </div>
   <?php } ?>
-  <?php echo $content_bottom; ?></div>
+  <?php echo $content_bottom; ?>
+  </div>
+  </div>
+  </div>
+
+
+
 <script type="text/javascript"><!--
 function display(view) {
 	if (view == 'list') {
