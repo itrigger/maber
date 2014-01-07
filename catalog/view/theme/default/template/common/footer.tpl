@@ -40,6 +40,7 @@
 
 <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
 <script type="text/javascript" src="catalog/view/theme/default/js/plugins.js"></script>
+<script type="text/javascript" src="catalog/view/theme/default/js/lightbox.js"></script>
 <script type="text/javascript" src="catalog/view/theme/default/js/project-name.js"></script>
 
 </body></html>

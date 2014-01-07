@@ -1,2 +1,4 @@
 /system/cache/*
 !index.html
+/image/cache/*
+!index.html
