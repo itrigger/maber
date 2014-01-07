@@ -18,3 +18,14 @@
 2013-12-30 12:42:55 - PHP Warning:  Invalid argument supplied for foreach() in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\common\footer.tpl on line 43
 2013-12-30 12:43:01 - PHP Notice:  Undefined variable: scripts in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\common\footer.tpl on line 43
 2013-12-30 12:43:01 - PHP Warning:  Invalid argument supplied for foreach() in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\common\footer.tpl on line 43
+2014-01-07 11:24:41 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 59
+2014-01-07 11:24:41 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 59
+2014-01-07 11:27:04 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 60
+2014-01-07 11:27:04 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 60
+2014-01-07 11:34:22 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\catalog\controller\product\product.php on line 408
+2014-01-07 11:39:21 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\catalog\controller\product\product.php on line 408
+2014-01-07 12:07:19 - PHP Notice:  Undefined variable: entry_desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 58
+2014-01-07 12:07:19 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 59
+2014-01-07 12:07:19 - PHP Notice:  Undefined variable: entry_desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 58
+2014-01-07 12:07:19 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 59
+2014-01-07 12:07:22 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109

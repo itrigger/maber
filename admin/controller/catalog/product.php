@@ -1,4 +1,4 @@
-<?php 
+<?php
 class ControllerCatalogProduct extends Controller {
 	private $error = array(); 
      
@@ -812,6 +812,7 @@ class ControllerCatalogProduct extends Controller {
 		$this->data['entry_meta_description'] = $this->language->get('entry_meta_description');
 		$this->data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
 		$this->data['entry_description'] = $this->language->get('entry_description');
+	  /*	$this->data['entry_desc2'] = $this->language->get('entry_desc2');  */
 		$this->data['entry_store'] = $this->language->get('entry_store');
 		$this->data['entry_keyword'] = $this->language->get('entry_keyword');
     	$this->data['entry_model'] = $this->language->get('entry_model');

@@ -10,6 +10,7 @@ class ModelCatalogProduct extends Model {
 		}
 		
 		foreach ($data['product_description'] as $language_id => $value) {
+		   /*	$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', description = '" . $this->db->escape($value['description']) ."', desc2 = '" . $this->db->escape($value['desc2']) . "', tag = '" . $this->db->escape($value['tag']) . "', seo_title = '" . $this->db->escape($value['seo_title']) . "', seo_h1 = '" . $this->db->escape($value['seo_h1']) . "'");*/
 			$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', seo_title = '" . $this->db->escape($value['seo_title']) . "', seo_h1 = '" . $this->db->escape($value['seo_h1']) . "'");
 		}
 		
@@ -134,6 +135,7 @@ class ModelCatalogProduct extends Model {
 		
 		foreach ($data['product_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', seo_title = '" . $this->db->escape($value['seo_title']) . "', seo_h1 = '" . $this->db->escape($value['seo_h1']) . "'");
+/*			$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', description = '" . $this->db->escape($value['description']) ."', desc2 = '" . $this->db->escape($value['desc2']) . "', tag = '" . $this->db->escape($value['tag']) . "', seo_title = '" . $this->db->escape($value['seo_title']) . "', seo_h1 = '" . $this->db->escape($value['seo_h1']) . "'");*/
 		}
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_to_store WHERE product_id = '" . (int)$product_id . "'");
@@ -290,7 +292,7 @@ class ModelCatalogProduct extends Model {
 			$data['status'] = '0';
 						
 			$data = array_merge($data, array('product_attribute' => $this->getProductAttributes($product_id)));
-			$data = array_merge($data, array('product_description' => $this->getProductDescriptions($product_id)));			
+			$data = array_merge($data, array('product_description' => $this->getProductDescriptions($product_id)));
 			$data = array_merge($data, array('product_discount' => $this->getProductDiscounts($product_id)));
 			$data = array_merge($data, array('product_filter' => $this->getProductFilters($product_id)));
 			$data = array_merge($data, array('product_image' => $this->getProductImages($product_id)));		
@@ -476,6 +478,7 @@ class ModelCatalogProduct extends Model {
 				'seo_h1'           => $result['seo_h1'],
 				'name'             => $result['name'],
 				'description'      => $result['description'],
+				/*'desc2'      => $result['desc2'], */
 				'meta_keyword'     => $result['meta_keyword'],
 				'meta_description' => $result['meta_description'],
 				'tag'              => $result['tag']

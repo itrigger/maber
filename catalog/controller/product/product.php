@@ -1,4 +1,4 @@
-<?php  
+<?php
 class ControllerProductProduct extends Controller {
 	private $error = array(); 
 	
@@ -405,6 +405,7 @@ class ControllerProductProduct extends Controller {
 			$this->data['reviews'] = sprintf($this->language->get('text_reviews'), (int)$product_info['reviews']);
 			$this->data['rating'] = (int)$product_info['rating'];
 			$this->data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+		/*	$this->data['desc2'] = html_entity_decode($product_info['desc2'], ENT_QUOTES, 'UTF-8');  */
 			$this->data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
 			
 			$this->data['products'] = array();

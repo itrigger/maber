@@ -106,6 +106,7 @@
       <?php } ?>
     </table>
   </div>
+<!--  <?php echo $desc2; ?>  -->
   <?php } ?>
   <?php if ($review_status) { ?>
   <div id="tab-review" class="tab-content">

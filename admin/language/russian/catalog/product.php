@@ -32,6 +32,7 @@ $_['entry_name']             = 'Название товара:';
 $_['entry_meta_keyword']     = 'Мета-тег Keywords:';
 $_['entry_meta_description'] = 'Мета-тег Description:';
 $_['entry_description']      = 'Описание:';
+$_['entry_desc2']            = 'Состав:';
 $_['entry_store']            = 'Магазины:';
 $_['entry_keyword']          = 'SEO URL:<br/><span class="help">Должно быть уникальным на всю систему.</span>';
 $_['entry_model']            = 'Модель:';
