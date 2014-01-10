@@ -31,3 +31,9 @@
 2014-01-07 12:07:22 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109
 2014-01-07 12:41:59 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109
 2014-01-07 12:42:30 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109
+2014-01-10 12:50:26 - PHP Notice:  Undefined variable: i in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 9
+2014-01-10 12:50:26 - PHP Notice:  Undefined variable: i in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 9
+2014-01-10 12:50:27 - PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(D:/_Install/openserver/userdata/temp/\sess_mehro8d4uis6bu2hie3obs5bj6, O_RDWR) failed: Permission denied (13) in D:\_Install\openserver\domains\maber\system\library\session.php on line 11
+2014-01-10 12:50:27 - PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at D:\_Install\openserver\domains\maber\index.php:103) in D:\_Install\openserver\domains\maber\system\library\session.php on line 11
+2014-01-10 12:50:52 - PHP Notice:  Undefined variable: i in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 9
+2014-01-10 12:50:52 - PHP Notice:  Undefined variable: i in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 9
