@@ -29,3 +29,5 @@
 2014-01-07 12:07:19 - PHP Notice:  Undefined variable: entry_desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 58
 2014-01-07 12:07:19 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 59
 2014-01-07 12:07:22 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109
+2014-01-07 12:41:59 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109
+2014-01-07 12:42:30 - PHP Notice:  Undefined variable: desc2 in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 109

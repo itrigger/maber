@@ -34,7 +34,7 @@
         <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
         <?php } ?>
         <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
-      <?php if ($price) { ?>
+<!--      <?php if ($price) { ?>
       <div class="price"><?php echo $text_price; ?>
         <?php if (!$special) { ?>
         <?php echo $price; ?>
@@ -57,21 +57,16 @@
         </div>
         <?php } ?>
       </div>
-      <?php } ?>
+      <?php } ?>-->
       <?php if ($options) { ?>
 
       <?php } ?>
 
-      <?php if ($review_status) { ?>
+<!--      <?php if ($review_status) { ?>
       <div class="review">
         <div><img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
-        <div class="share"><!-- AddThis Button BEGIN -->
-          <script type="text/javascript" src="http://yraaa.ru/share/share_16x16.d3sn"></script>
-		  <style type="text/css">#hidden_tags {display:none}</style>
-          <!-- AddThis Button END --> 
-        </div>
       </div>
-      <?php } ?>
+      <?php } ?>-->
     </div>
   </div>
   <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
@@ -106,10 +101,10 @@
       <?php } ?>
     </table>
   </div>
-<!--  <?php echo $desc2; ?>  -->
+<!--  <?php //echo $desc2; ?>  -->
   <?php } ?>
   <?php if ($review_status) { ?>
-  <div id="tab-review" class="tab-content">
+  <div id="tab-review" class="tab-content hidden">
     <div id="review"></div>
     <h2 id="review-title"><?php echo $text_write; ?></h2>
     <b><?php echo $entry_name; ?></b><br />
