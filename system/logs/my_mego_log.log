@@ -37,3 +37,19 @@
 2014-01-10 12:50:27 - PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at D:\_Install\openserver\domains\maber\index.php:103) in D:\_Install\openserver\domains\maber\system\library\session.php on line 11
 2014-01-10 12:50:52 - PHP Notice:  Undefined variable: i in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 9
 2014-01-10 12:50:52 - PHP Notice:  Undefined variable: i in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 9
+2014-01-13 11:54:53 - PHP Notice:  Undefined variable: currency in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 43
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined variable: currency in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 43
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82
+2014-01-13 11:54:53 - PHP Notice:  Undefined index:  sister_id in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\module\category.tpl on line 82

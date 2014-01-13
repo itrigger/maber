@@ -46,13 +46,14 @@
 </header>
   <nav>
     <ul id="menu">
-      <li><a href="#">Пункт 1</a></li>
-      <li><a href="#">Пункт 2</a></li>
-      <li><a href="#">Пункт 3</a></li>
-      <li><a href="#">Пункт 4</a></li>
-      <li><a href="#">Пункт 5</a></li>
-      <li><a href="#">Пункт 6</a></li>
-      <li><a href="#">Пункт 7</a></li>
+      <li><a href="/">Главная</a></li>
+      <li><a href="/index.php?route=information/information&information_id=4">О компании</a></li>
+      <li><a href="/index.php?route=product/category&path=59">Каталог</a></li>
+      <li><a href="/index.php?route=information/blog&act=cat&catid=1">Новости</a></li>
+      <li><a href="/index.php?route=information/blog&act=cat&catid=2">Акции</a></li>
+      <li><a href="/index.php?route=information/information&information_id=6">Отзывы</a></li>
+      <li><a href="#">Фотогалерея</a></li>
+      <li><a href="/index.php?route=information/contact">Контакты</a></li>
     </ul>
   </nav>
 <div id="notification"></div>
