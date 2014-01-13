@@ -1,4 +1,4 @@
-<?php 
+<?php
 class ControllerCommonHeader extends Controller {
 	protected function index() {
 		$this->data['title'] = $this->document->getTitle(); 
@@ -102,7 +102,10 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_weight_class'] = $this->language->get('text_weight_class');
 		$this->data['text_length_class'] = $this->language->get('text_length_class');
 		$this->data['text_zone'] = $this->language->get('text_zone');
-		
+		$this->data['text_gallery'] = $this->language->get('text_gallery');
+		$this->data['text_gallery_image'] = $this->language->get('text_gallery_image');
+		$this->data['text_gallery_album'] = $this->language->get('text_gallery_album');
+
 		/* octeam */
 		$this->data['text_octeam'] = $this->language->get('text_octeam');
 		$this->data['text_octeam_toolset'] = $this->language->get('text_octeam_toolset');
@@ -178,7 +181,8 @@ class ControllerCommonHeader extends Controller {
 			$this->data['weight_class'] = $this->url->link('localisation/weight_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['length_class'] = $this->url->link('localisation/length_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
-			
+			$this->data['gallery_album'] = HTTPS_SERVER . 'index.php?route=catalog/gallery_album&token=' . $this->session->data['token'];
+            $this->data['gallery_image'] = HTTPS_SERVER . 'index.php?route=catalog/gallery_image&token=' . $this->session->data['token'];
 			/* octeam */
 			$this->data['octeam_toolset'] = $this->url->link('octeam/toolset', 'token=' . $this->session->data['token'], 'SSL');
 			

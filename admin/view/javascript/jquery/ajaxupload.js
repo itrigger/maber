@@ -240,6 +240,8 @@
             data: {},
             // Submit file as soon as it's selected
             autoSubmit: true,
+            // Multiple
+            multiple: false,
             // The type of data that you're expecting back from the server.
             // html and xml are detected automatically.
             // Only useful when you are using json data as a response.
@@ -351,6 +353,9 @@
             var input = document.createElement("input");
             input.setAttribute('type', 'file');
             input.setAttribute('name', this._settings.name);
+            if (this._settings.multiple) {
+                input.setAttribute('multiple', 'multiple');
+            }
             
             addStyles(input, {
                 'position' : 'absolute',

@@ -52,7 +52,7 @@
       <li><a href="/index.php?route=information/blog&act=cat&catid=1">Новости</a></li>
       <li><a href="/index.php?route=information/blog&act=cat&catid=2">Акции</a></li>
       <li><a href="/index.php?route=information/information&information_id=6">Отзывы</a></li>
-      <li><a href="#">Фотогалерея</a></li>
+      <li><a href="/index.php?route=gallery/album">Фотогалерея</a></li>
       <li><a href="/index.php?route=information/contact">Контакты</a></li>
     </ul>
   </nav>
