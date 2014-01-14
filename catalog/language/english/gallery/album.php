@@ -1,11 +1,11 @@
 <?php
 // Heading
-$_['heading_title']  = 'Gallery Album';
+$_['heading_title']  = 'Фотогалерея';
 
 
-// Text 
-$_['text_album']        = 'Album';
-$_['text_sort']         = 'Sort By:';
+// Text
+$_['text_album']        = 'Альбом';
+$_['text_sort']         = 'Сортировать:';
 $_['text_default']      = 'Default';
 $_['text_name_asc']     = 'Name A - Z';
 $_['text_name_desc']    = 'Name Z - A';

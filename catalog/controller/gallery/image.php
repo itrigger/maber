@@ -1,4 +1,4 @@
-<?php 
+<?php
 class ControllerGalleryImage extends Controller {  
 	public function index() {
 		$this->language->load('gallery/image');
@@ -52,7 +52,7 @@ class ControllerGalleryImage extends Controller {
 				
 				$album_info = $this->model_catalog_gallery->getAlbum($this->request->get['album_id']);
 				
-				$this->data['heading_title'] = $this->language->get('text_album') . ' : ' . $album_info['name'];
+				$this->data['heading_title'] =  $album_info['name'];
 				
 				$this->data['breadcrumbs'][] = array(
 					'text'      => $this->language->get('text_gallery'),
@@ -61,8 +61,8 @@ class ControllerGalleryImage extends Controller {
 				);
 
 				$this->data['breadcrumbs'][] = array(
-					'text'      => $this->language->get('text_album') . ' : ' .  $album_info['name'],
-					'href'      => $this->url->link('gallery/image&album_id='.$this->request->get['album_id']),			
+					'text'      =>  $album_info['name'],
+					'href'      => $this->url->link('gallery/image&album_id='.$this->request->get['album_id']),
 					'separator' => $this->language->get('text_separator')
 				);
 				
@@ -81,8 +81,8 @@ class ControllerGalleryImage extends Controller {
 					
 					$this->data['images'][] = array(
 		            	'name'    => $result['name'],
-						'thumb'   => $this->model_tool_image->resize($image, 125 , 125 ),
-					    'popup'   => $this->model_tool_image->resize($image, $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+						'thumb'   => $this->model_tool_image->cropsize($image, 125 , 125 ),
+					    'popup'   => $this->model_tool_image->onesize($image, $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
 						'date_added' => explode(" ",$result['date_added']),
 		          	);
 		        }
@@ -147,7 +147,7 @@ class ControllerGalleryImage extends Controller {
 				$this->data['sort'] = $sort;
 				$this->data['order'] = $order;
 				
-				$this->document->setTitle('Album : '.$album_info['name']);
+				$this->document->setTitle($album_info['name']);
 	   			
 	   			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/gallery/image.tpl')) {
 					$this->template = $this->config->get('config_template') . '/template/gallery/image.tpl';
@@ -230,3 +230,5 @@ class ControllerGalleryImage extends Controller {
 	}  	
 }
 ?>
+
+<!--http://stackoverflow.com/questions/7081860/remove-the-image-resize-ratio-in-opencart-->

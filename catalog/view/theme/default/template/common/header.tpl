@@ -17,11 +17,14 @@
 <!--<script src="catalog/view/theme/default/js/jquery-1.7.1.min.js"></script>  УБРАТЬ ДО РЕЛИЗА-->
 
 <script src="catalog/view/theme/default/js/jquery1.10.2.min.js"></script>
+<script src="catalog/view/theme/default/js/jqueryUI1.10.3.min.js"></script>
 <script src="catalog/view/theme/default/js/modernizr-2.6.2.min.js"></script>
+<script src="catalog/view/theme/default/js/plugins.js"></script>
+<script src="catalog/view/theme/default/js/project-name.js"></script>
 
 <?php foreach ($scripts as $script) { ?><script type="text/javascript" src="<?php echo $script; ?>"></script><?php } ?>
 
-<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<!--<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>    -->
 <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
 <!--[if lte IE 8]><script src="catalog/view/javascript/static/layout/js/oldies.js" type="text/javascript"></script> <![endif]-->
 

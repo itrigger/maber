@@ -1,4 +1,4 @@
-<?php 
+<?php
 class ControllerGalleryAlbum extends Controller {
 	private $error = array();
 	
@@ -72,7 +72,7 @@ class ControllerGalleryAlbum extends Controller {
 				
 				$this->data['albums'][] = array(
 	            	'name'    => $result['name'],
-					'thumb'   => $this->model_tool_image->resize($image, 144, 108),
+					'thumb'   => $this->model_tool_image->cropsize($image, 144, 108),
 				    'date_added' => explode(" ",$result['date_added']),
 	          		'href'    	 => $this->url->link('gallery/image', 'album_id=' . $result['album_id']),
 				);

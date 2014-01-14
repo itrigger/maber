@@ -18,7 +18,7 @@
         <?php for ($j = $i; $j < ($i + 4); $j++) { ?>
         <td class="td_album_image">
 	        <?php if (isset($images[$j])) { ?>
-	          <a href="<?php echo $images[$j]['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $images[$j]['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a><br />
+	          <a href="<?php echo $images[$j]['popup']; ?>" title="<?php echo $heading_title; ?>" data-lightbox="roadtrip"><img src="<?php echo $images[$j]['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a><br />
 	          <a href="<?php echo $images[$j]['href']; ?>" style="text-decoration:none;"><?php echo $images[$j]['name']; ?></a><br />
 	        <?php } ?>
         </td>
@@ -26,24 +26,13 @@
       </tr>
       <?php } ?>
     </table>
-   
+
     <?php } ?>
   
   </div>
 </div>
 
-<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
-<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js"></script>
 
-<script type="text/javascript"><!--
-$(document).ready(function() {
-	$('.colorbox').colorbox({
-		overlayClose: true,
-		opacity: 0.5,
-		rel: "colorbox"
-	});
-});
-//--></script> 
 
   <?php echo $content_bottom; ?></div>
 <?php echo $footer; ?>
