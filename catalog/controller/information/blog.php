@@ -28,9 +28,7 @@ class ControllerInformationBlog extends Controller {
 			'text' => $this->language->get('heading_title_blog'),
 			'separator' => $this->language->get('text_separator')
 		);
-		$this->document->addStyle('catalog/view/javascript/jquery/ampliacao/css/jqzoom.css');
-		$this->document->addScript('catalog/view/javascript/jquery/ampliacao/jquery.jqzoom1.0.1.js');
-		$this->document->addScript('catalog/view/javascript/jquery/ampliacao/jqzoom.pack.1.0.1.js');
+
 	}
 
 	public function index() {

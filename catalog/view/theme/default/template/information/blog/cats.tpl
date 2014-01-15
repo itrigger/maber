@@ -2,23 +2,7 @@
   <?php echo $column_left; ?>
   <?php echo $column_right; ?>
 
-  <script type="text/javascript"><!--
-  $(document).ready(function(){
-  var options =
-  {
-  showEffect:'show',
-  hideEffect:'fadeout',
-  fadeoutSpeed: 'slow',
-  title :true,
-  lens:true,
-  zoomWidth: 350,
-  zoomHeight: 350
-  }
-  $(".jqzoom").jqzoom(options);
-  });
 
-
-  //--></script>
   <div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $i=> $breadcrumb) { ?>

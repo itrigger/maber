@@ -46,14 +46,7 @@
 
           <ul>
             <?php foreach ($category['children'] as $child) { ?>
-
-             <?php
-               if($child['href'] == HTTP_SERVER."akcii" or $child['href'] == HTTP_SERVER."new") {
-                echo '<li class="hidden">';
-              } else  echo '<li>';
-              ?>
-
-
+             <li>
               <?php if ($child['category_id'] == $child_id) { ?>
               <a href="<?php echo $child['href']; ?>" class="active"><span><?php echo $child['name']; ?></span></a>
               <?php } else { ?>
