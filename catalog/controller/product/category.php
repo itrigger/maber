@@ -1,4 +1,4 @@
-<?php 
+<?php
 class ControllerProductCategory extends Controller {  
 	public function index() { 
 		$this->language->load('product/category');
@@ -225,6 +225,22 @@ class ControllerProductCategory extends Controller {
 			$product_total = $this->model_catalog_product->getFoundProducts(); 
 			
 			foreach ($results as $result) {
+			  //--------------------------------------
+			  //--------------------------------------
+			  //--------------------------------------
+			  $results_img = $this->model_catalog_product->getProductImages($result['product_id']);
+              $dop_img = array();
+              foreach ($results_img as $result_img) {
+                 if ($result_img['image']) {
+                    $image_dop = $this->model_tool_image->resize($result_img['image'], 120, 120);
+                 } else {
+                    $image_dop = false;
+                 }
+                 $dop_img[] = $image_dop;
+              }
+              //--------------------------------------
+              //--------------------------------------
+              //--------------------------------------
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				} else {
@@ -257,6 +273,9 @@ class ControllerProductCategory extends Controller {
 								
 				$this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
+                    //------------------
+                    'dop_img' => $dop_img,
+                    //------------------
 					'thumb'       => $image,
 					'name'        => $result['name'],
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, 300) . '..',

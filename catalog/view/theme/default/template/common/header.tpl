@@ -19,8 +19,7 @@
 <script src="catalog/view/theme/default/js/jquery1.10.2.min.js"></script>
 <script src="catalog/view/theme/default/js/jqueryUI1.10.3.min.js"></script>
 <script src="catalog/view/theme/default/js/modernizr-2.6.2.min.js"></script>
-<script src="catalog/view/theme/default/js/plugins.js"></script>
-<script src="catalog/view/theme/default/js/project-name.js"></script>
+
 
 <?php foreach ($scripts as $script) { ?><script type="text/javascript" src="<?php echo $script; ?>"></script><?php } ?>
 
@@ -31,6 +30,22 @@
 </head>
 
 <body>
+  <!-- Parallax  midground clouds -->
+  <div id="parallax-bg2">
+    <img id="bg2-1" src="catalog/view/theme/default/image/cloud-lg1.png" alt="cloud"/>
+    <img id="bg2-2" src="catalog/view/theme/default/image/cloud-lg1.png" alt="cloud"/>
+    <img id="bg2-3" src="catalog/view/theme/default/image/cloud-lg1.png" alt="cloud"/>
+    <img id="bg2-4" src="catalog/view/theme/default/image/cloud-lg1.png" alt="cloud"/>
+    <img id="bg2-5" src="catalog/view/theme/default/image/cloud-lg1.png" alt="cloud"/>
+  </div>
+
+  <!-- Parallax  background clouds -->
+  <div id="parallax-bg1">
+    <img id="bg1-1" src="catalog/view/theme/default/image/cloud-lg2.png" alt="cloud"/>
+    <img id="bg1-2" src="catalog/view/theme/default/image/cloud-lg2.png" alt="cloud"/>
+    <img id="bg1-3" src="catalog/view/theme/default/image/cloud-lg2.png" alt="cloud"/>
+    <img id="bg1-4" src="catalog/view/theme/default/image/cloud-lg2.png" alt="cloud"/>
+  </div>
 <div id="container">
 <header id="header">
   <?php if ($logo) { ?>

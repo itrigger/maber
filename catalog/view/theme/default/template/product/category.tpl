@@ -75,7 +75,26 @@
     <?php foreach ($products as $product) { ?>
     <div>
       <?php if ($product['thumb']) { ?>
-      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+      <!-- -----------------------------------  -->
+
+      <div class="image photoslider-mini">
+            <a href="<?php echo $product['href']; ?>" class="sliderkit-panels">
+                  <!-- Контролы управления дополнительными изображениями -->
+                  <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"></div>
+                  <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"></div>
+                  <!-- ------------------------------------------------- -->
+                <div class="sliderkit-panel">
+                    <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
+                </div>
+                <!-- Дополнительные изображения в категории, удали, если не нужны -->
+                <?php foreach ($product['dop_img'] as $img) { ?>
+                   <div class="sliderkit-panel">
+                       <img src="<?php echo $img;?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>">
+                   </div>
+                <?php } ?>
+                <!-- ------------------------------------------------------------ -->
+            </a>
+      </div>
       <?php } ?>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
       <div class="description"><?php echo $product['description']; ?></div>
@@ -107,32 +126,32 @@ function display(view) {
 
 		$('.product-grid > div').each(function(index, element) {
 			html = '';
-			
+
 			var image = $(element).find('.image').html();
-			
+
 			if (image != null) {
 				html += '<div class="image">' + image + '</div>';
 			}
-			
+
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
 			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
-			
+
 			var price = $(element).find('.price').html();
-			
+
 
 			var rating = $(element).find('.rating').html();
-			
+
 			if (rating != null) {
 				html += '<div class="rating">' + rating + '</div>';
 			}
 
-			
+
 			$(element).html(html);
-		});	
-					
+		});
+
 
 }
 
 
-//--></script> 
+//--></script>
 <?php echo $footer; ?>

@@ -11,7 +11,7 @@
     <?php } ?>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script>
 $(document).ready(function() {
 	  //SLIDESHOW SETTINGS
 	$("#slideshow").nerveSlider({
@@ -26,7 +26,7 @@ $(document).ready(function() {
         showPause: false
 	});
 });
---></script>
+</script>
 
 <!--http://www.ryanbruzan.net/work/plugins/nerve-slider
 
