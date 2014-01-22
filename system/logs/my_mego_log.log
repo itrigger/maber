@@ -22,3 +22,6 @@
 2014-01-16 8:58:31 - PHP Notice:  Undefined index:  href in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\gallery\image.tpl on line 22
 2014-01-16 8:58:31 - PHP Notice:  Undefined index:  href in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\gallery\image.tpl on line 22
 2014-01-16 8:58:31 - PHP Notice:  Undefined index:  href in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\gallery\image.tpl on line 22
+2014-01-22 11:35:51 - PHP Notice:  Undefined variable: entry_desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 58
+2014-01-22 11:35:51 - PHP Notice:  Undefined index:  desc2 in D:\_Install\openserver\domains\maber\admin\view\template\catalog\product_form.tpl on line 59
+2014-01-22 11:59:15 - PHP Notice:  Undefined variable: products_similar in D:\_Install\openserver\domains\maber\catalog\view\theme\default\template\product\product.tpl on line 179

@@ -230,9 +230,9 @@ class ControllerProductProduct extends Controller {
 			$this->document->setDescription($product_info['meta_description']);
 			$this->document->setKeywords($product_info['meta_keyword']);
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
-			$this->document->addScript('catalog/view/javascript/jquery/tabs.js');
+/*			$this->document->addScript('catalog/view/javascript/jquery/tabs.js');
 			$this->document->addScript('catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js');
-			$this->document->addStyle('catalog/view/javascript/jquery/colorbox/colorbox.css');
+			$this->document->addStyle('catalog/view/javascript/jquery/colorbox/colorbox.css');*/
 			
 			if ($product_info['seo_h1']) {
 				$this->data['heading_title'] = $product_info['seo_h1'];
@@ -407,7 +407,49 @@ class ControllerProductProduct extends Controller {
 			$this->data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
 		/*	$this->data['desc2'] = html_entity_decode($product_info['desc2'], ENT_QUOTES, 'UTF-8');  */
 			$this->data['attribute_groups'] = $this->model_catalog_product->getProductAttributes($this->request->get['product_id']);
-			
+
+            // product similar
+			$this->data['products_similar'] = array();
+
+			$similar = $this->model_catalog_product->getProductSimilar($this->request->get['product_id'],5);
+
+			foreach ($similar as $result) {
+				if ($result['image']) {
+					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+				} else {
+					$image = $this->model_tool_image->resize('no_image.jpg', $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+				}
+
+				if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+					$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+				} else {
+					$price = false;
+				}
+
+				if ((float)$result['special']) {
+					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+				} else {
+					$special = false;
+				}
+
+				if ($this->config->get('config_review_status')) {
+					$rating = (int)$result['rating'];
+				} else {
+					$rating = false;
+				}
+
+				$this->data['products_similar'][] = array(
+					'product_id' => $result['product_id'],
+					'thumb'   	 => $image,
+					'name'    	 => $result['name'],
+					'price'   	 => $price,
+					'special' 	 => $special,
+					'rating'     => $rating,
+					'reviews'    => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
+					'href'    	 => $this->url->link('product/product', 'product_id=' . $result['product_id']),
+				);
+			}
+// product similar
 			$this->data['products'] = array();
 			
 			$results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);

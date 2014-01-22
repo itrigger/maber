@@ -27,7 +27,7 @@
     <?php if (count($categories) <= 5) { ?>
     <ul>
       <?php foreach ($categories as $category) { ?>
-      <li><a href="<?php echo $category['href']; ?>"><img src="<?php echo $category['thumb']; ?>"><span><?php echo $category['name']; ?></a></span></li>
+      <li><a href="<?php echo $category['href']; ?>" style="background: url('<?php echo $category['thumb']; ?>') no-repeat center top; "><span><?php echo $category['name']; ?></span></a></li>
       <?php } ?>
     </ul>
     <?php } else { ?>
@@ -77,11 +77,11 @@
       <?php if ($product['thumb']) { ?>
       <!-- -----------------------------------  -->
 
-      <div class="image photoslider-mini">
+      <div class="image img-rotator">
             <a href="<?php echo $product['href']; ?>" class="sliderkit-panels">
                   <!-- Контролы управления дополнительными изображениями -->
-                  <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"></div>
-                  <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"></div>
+                  <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><</div>
+                  <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next">></div>
                   <!-- ------------------------------------------------- -->
                 <div class="sliderkit-panel">
                     <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />

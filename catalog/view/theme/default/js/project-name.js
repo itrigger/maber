@@ -14,16 +14,15 @@ function parallaxScroll(){
 }
 
 $(window).load(function(){
-
-    $(".photoslider-mini").sliderkit({
+    $(".img-rotator").sliderkit({
     	auto:false,
     	autospeed:3000,
     	panelbtnshover:false,
     	circular:true,
     	fastchange:true,
         panelfx:"sliding",
-panelfxspeed:1000,
-panelfxeasing:"easeOutExpo" // "easeOutExpo", "easeInOutExpo", etc.
+        panelfxspeed:1000,
+        panelfxeasing:"easeOutExpo"
     });
 
 });

@@ -836,19 +836,29 @@ ul.box-filter > li ul {
 	float: left;
 	list-style:none;
 	line-height:16px;
-	width:22%;
+	width:170px;
 	padding:10px 5px 5px 5px;
 	margin-bottom:10px;
 	margin-right:10px;
+    height: 170px;
+    overflow: hidden;
 }
 .category-list ul li a{
-display: inline;
+display: inline-block;
+width: 170px;
+height: 170px;
+&:hover{
+  background-position: center bottom !important;
+}
+
 }
 .category-list ul li span{
 display:block;
 height:30px;
 }
-.category-list ul li  img{}
+.category-list ul li  img{
+
+}
 
 /* manufacturer */
 .manufacturer-list {
@@ -924,8 +934,8 @@ height:30px;
 	
 }
 .product-list > div + div {
-	border-top: 1px solid #EEEEEE;
-	padding-top: 16px;
+/*	border-top: 1px solid #EEEEEE;
+	padding-top: 16px;*/
 }
 .product-list .image {
 	float: left;
