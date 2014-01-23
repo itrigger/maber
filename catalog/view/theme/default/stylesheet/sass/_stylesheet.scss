@@ -258,7 +258,7 @@ font-weight:700;
 #header #search {
 	position: absolute;
 	top: 55px;
-	right: 0px;
+	left: 300px;
 	width: 298px;
 	z-index: 7;
 }
@@ -739,7 +739,7 @@ a.button:hover, input.button:hover {
 	font-weight: bold;
 }
 .box-product .rating {
-	display: block;
+	display: none;
 	margin-bottom: 4px;
 }
 /* box category */
@@ -958,6 +958,7 @@ height:30px;
 	color: #4D4D4D;
 }
 .product-list .rating {
+  display: none;
 	color: #7B7B7B;
 }
 .product-list .price {
@@ -1035,7 +1036,7 @@ height:30px;
 	display: none;
 }
 .product-grid .rating {
-	display: block;
+	display: none;
 	margin-bottom: 4px;
 }
 .product-grid .price {
@@ -1224,6 +1225,7 @@ height:30px;
 	margin-bottom: 20px;
 }
 .review-list .rating {
+  display: none;
 	float: right;
 	margin-bottom: 20px;
 }

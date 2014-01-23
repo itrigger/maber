@@ -4,3 +4,55 @@
   }
 
 }
+
+.top-contact__wrapper{
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 158px;
+  z-index: 7;
+  padding-left: 22px;
+}
+
+.top-contact__list{
+
+}
+
+.top-contact__list__input{
+  width: 156px;
+  height: 29px;
+  background: #ccc;
+  position: relative;
+}
+
+.top-contact__list__input_open{
+  display: none;
+  opacity: 0;
+  background: #fff;
+  position: absolute;
+  width: 156px;
+  z-index: 50;
+  @include box-shadow(0px 3px 7px 6px rgba(#e1e4e9, 0.5));
+}
+
+.tabs_h{
+
+}
+
+.tabs_h.active{
+  font-weight: bold;
+}
+
+.top-contact__info{
+
+}
+
+.tabs{
+  display: none;
+}
+
+.tabs.active{
+  display: block;
+}
+
+

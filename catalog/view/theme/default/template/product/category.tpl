@@ -13,9 +13,9 @@
   <h1><?php echo $heading_title; ?></h1>
   <?php if ($thumb || $description) { ?>
   <div class="category-info">
-    <?php if ($thumb) { ?>
+<!--    <?php if ($thumb) { ?>
     <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
-    <?php } ?>
+    <?php } ?>-->
     <?php if ($description) { ?>
     <?php echo $description; ?>
     <?php } ?>
@@ -79,19 +79,19 @@
 
       <div class="image img-rotator">
             <a href="<?php echo $product['href']; ?>" class="sliderkit-panels">
-                  <!-- Контролы управления дополнительными изображениями -->
+                  <!-- Контролы управления дополнительными изображениями
                   <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><</div>
                   <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next">></div>
                   <!-- ------------------------------------------------- -->
-                <div class="sliderkit-panel">
-                    <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
-                </div>
+                <!--<div class="sliderkit-panel">-->
+                 <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
+                <!--</div>  -->
                 <!-- Дополнительные изображения в категории, удали, если не нужны -->
-                <?php foreach ($product['dop_img'] as $img) { ?>
-                   <div class="sliderkit-panel">
+                <?php // foreach ($product['dop_img'] as $img) { ?>
+                 <!--  <div class="sliderkit-panel">
                        <img src="<?php echo $img;?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>">
-                   </div>
-                <?php } ?>
+                   </div>-->
+                <?php // } ?>
                 <!-- ------------------------------------------------------------ -->
             </a>
       </div>

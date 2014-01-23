@@ -61,6 +61,21 @@
     <div class="button-search"></div>
     <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
   </div>
+  <div class="top-contact__wrapper"  id="getaddress">
+        <div class="top-contact__list">
+             <div class="top-contact__list__input">
+                  Актау (выб.)
+             </div>
+             <div class="top-contact__list__input_open">
+                  <div id="tab1" class="tabs_h active">Актау</div>
+                  <div id="tab2" class="tabs_h">Жанаозен</div>
+             </div>
+        </div>
+        <div class="top-contact__info">
+             <div id="con_tab1" class="tabs active">номер в актау</div>
+             <div id="con_tab2" class="tabs">Номер в жанаозен</div>
+        </div>
+  </div>
 </header>
   <nav>
     <ul id="menu">

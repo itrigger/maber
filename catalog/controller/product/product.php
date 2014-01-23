@@ -411,7 +411,7 @@ class ControllerProductProduct extends Controller {
             // product similar
 			$this->data['products_similar'] = array();
 
-			$similar = $this->model_catalog_product->getProductSimilar($this->request->get['product_id'],5);
+			$similar = $this->model_catalog_product->getProductSimilar($this->request->get['product_id'],3);
 
 			foreach ($similar as $result) {
 				if ($result['image']) {
