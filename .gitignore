@@ -2,3 +2,5 @@
 !index.html
 /image/cache/*
 !index.html
+/catalog/view/theme/default/stylesheet/.sass-cache*
+!index.html

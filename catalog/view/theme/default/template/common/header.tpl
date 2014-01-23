@@ -51,9 +51,9 @@
   <?php if ($logo) { ?>
     <div id="logo">
       <?php if ($home == $og_url) { ?>
-            <img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" />
+            <div class="sitelogo sprite-logo"></div>
       <?php } else { ?>
-            <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a>
+            <a href="<?php echo $home; ?>" class="sitelogo sprite-logo" title="Logo"></a>
       <?php } ?>
     </div>
   <?php } ?>
